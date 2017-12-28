@@ -19,18 +19,31 @@ namespace CsharpPats
     /// CsharpPats说明：本代码版权归海陵所有 
     /// 唯一标识：c19277e8-7031-494d-bdca-4dc8106812d4 
     /// </summary>
+
+
     public partial class RectDraw : Form
     {
+        private Rectangle rec;
+        private Square sq;
         public RectDraw()
         {
             InitializeComponent();
+            Init();
+        }
+
+        private void Init()
+        {
+            rec=new Rectangle(10,20,70,100);
+            sq=new Square(150,100,70);
         }
 
         private void pic_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
-            Pen rPen=new Pen(Color.Black);
-            g.DrawLine(rPen,10,20,70,80);
+            //Pen rPen=new Pen(Color.Black);
+            //g.DrawLine(rPen,10,20,70,80);
+            rec.Draw(g);
+            sq.Draw(g);
         }
     }
 }
