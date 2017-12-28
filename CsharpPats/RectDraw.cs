@@ -28,7 +28,9 @@ namespace CsharpPats
 
         private void pic_Paint(object sender, PaintEventArgs e)
         {
-
+            Graphics g = e.Graphics;
+            Pen rPen=new Pen(Color.Black);
+            g.DrawLine(rPen,10,20,70,80);
         }
     }
 }
