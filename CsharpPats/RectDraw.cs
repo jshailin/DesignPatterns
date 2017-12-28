@@ -23,7 +23,7 @@ namespace CsharpPats
 
     public partial class RectDraw : Form
     {
-        private Rectangle rec;
+        private DoubleRect rec;
         private Square sq;
         public RectDraw()
         {
@@ -33,7 +33,7 @@ namespace CsharpPats
 
         private void Init()
         {
-            rec=new Rectangle(10,20,70,100);
+            rec=new DoubleRect(10,20,70,100);
             sq=new Square(150,100,70);
         }
 

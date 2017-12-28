@@ -18,7 +18,7 @@ namespace CsharpPats
     /// </summary> 
     public class Rectangle
     {
-        private readonly int _x, _y, _w, _h;
+        protected int _x, _y, _w, _h;
         protected Pen rPen;
         /// <summary>
         /// 构造方法
@@ -36,7 +36,7 @@ namespace CsharpPats
             rPen=new Pen(Color.Black);
         }
 
-        public void Draw(Graphics g)
+        public virtual void Draw(Graphics g)
         {
             g.DrawRectangle(rPen,_x,_y,_w,_h);
         }

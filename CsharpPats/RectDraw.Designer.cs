@@ -37,7 +37,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pic = new System.Windows.Forms.PictureBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.hiTextBox1 = new CsharpPats.HiTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,11 +56,35 @@
             this.pic.TabStop = false;
             this.pic.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_Paint);
             // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(39, 62);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 21);
+            this.textBox1.TabIndex = 2;
+            this.textBox1.Text = "12223";
+            // 
+            // hiTextBox1
+            // 
+            this.hiTextBox1.Location = new System.Drawing.Point(39, 128);
+            this.hiTextBox1.Name = "hiTextBox1";
+            this.hiTextBox1.Size = new System.Drawing.Size(100, 21);
+            this.hiTextBox1.TabIndex = 1;
+            this.hiTextBox1.Text = "1112333";
+            // 
             // RectDraw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.hiTextBox1);
             this.Controls.Add(this.pic);
             this.Name = "RectDraw";
             this.Text = "RectDraw";
@@ -69,6 +97,9 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pic;
+        private CsharpPats.HiTextBox hiTextBox1;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
