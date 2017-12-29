@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpPats", "CsharpPats\CsharpPats.csproj", "{72922680-5E4F-4A8C-AD8E-0A94DE146E4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "namer", "namer\namer.csproj", "{08AAB199-9742-4025-8724-A70A54F86FE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{72922680-5E4F-4A8C-AD8E-0A94DE146E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72922680-5E4F-4A8C-AD8E-0A94DE146E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72922680-5E4F-4A8C-AD8E-0A94DE146E4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08AAB199-9742-4025-8724-A70A54F86FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08AAB199-9742-4025-8724-A70A54F86FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08AAB199-9742-4025-8724-A70A54F86FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08AAB199-9742-4025-8724-A70A54F86FE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
